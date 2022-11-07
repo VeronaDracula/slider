@@ -1,0 +1,230 @@
+.page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 563px;
+    height: 654px;
+    overflow: hidden;
+    position: relative;
+}
+
+.block__container {
+    display: flex;
+    position: relative;
+}
+
+.block__buttons {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    height: 52px;
+    display: flex;
+}
+
+.block__button {
+    height: 52px;
+    width: 52px;
+    position: absolute;
+
+    &--prev {
+        left: 0;
+        transform: rotate(180deg);
+        background: transparent center no-repeat url(../../img/arrow-hover.svg);
+
+        &:hover {
+            background: transparent center no-repeat url(../../img/arrow.svg);
+        }
+    }
+
+    &--next {
+        right: 0;
+        background: transparent center no-repeat url(../../img/arrow-hover.svg);
+
+        &:hover {
+            background: transparent center no-repeat url(../../img/arrow.svg);
+        }
+    }
+}
+
+
+.block__img {
+    width: 563px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.content {
+    border-radius: 15px;
+    height: 600px;
+    //width: 435px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.content__text-box {
+    text-align: start;
+    padding: 0 28px;
+}
+
+.content__title {
+    color: var(--gray-900);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 24px; 
+}
+
+.content__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--blue-1000);
+    margin-bottom: 24px;
+}
+
+.content__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 52px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 6px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--type--sp4 {
+        margin-top: 80px;
+    }
+
+
+    &--theme--blue {
+        background: var(--blue-600);
+        &:hover {
+            background: var(--blue-800);
+        }
+    }
+
+    &--theme--red {
+        background: var(--red-300);
+        &:hover {
+            background: var(--red-400);
+        }
+    }
+
+    &--theme--orange {
+        background: var(--orange-600);
+        &:hover {
+            background: var(--orange-700);
+        }
+    }
+}
+
+
+.content__buttons-box {
+    padding: 0 28px;
+    margin-top: 10px;
+    width: 100%;
+}
+.content__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--orange-600);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    width: 100%;
+    height: 52px;
+    border: 1px solid #FFA438;
+    border-radius: 6px;
+    margin-right: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--orange-300);
+        border: none;
+    }
+
+}
+.content__btn-icon {
+    margin-right: 6px;
+    height: 16px;
+    width: 16px;
+}
+
+
+
+.block__dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    width: calc(435px - 52px);
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.block__dot {
+    margin-right: 8px;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.5) 50%, #fff 50%) right;
+    background-size: 200%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.active {
+        transition: background-position 10s linear;
+    }
+
+    &.prev {
+        background: linear-gradient(to left, #fff 50%, #fff 50%) right;
+        transition: background-position 0s linear;
+    }
+
+    &.next {
+        transition: background-position 0s linear;
+    }
+}
+
