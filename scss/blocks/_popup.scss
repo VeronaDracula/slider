@@ -27,14 +27,17 @@
 
 .popup__close {
     position: absolute;
+    border-radius: 4px;
     right: 20px;
     z-index: 10;
-    height: 18px;
-    width: 18px;
+    height: 25px;
+    width: 25px;
     border: none;
-    background: transparent center no-repeat url(../img/close-icon.svg);
+    background: transparent center no-repeat url(../img/close.png);
+    background-size: contain;
 
     &:hover {
-        background: transparent center no-repeat url(../img/close-icon-hover.svg);
+        cursor: pointer;
+        opacity: 0.7;
     }
 }
