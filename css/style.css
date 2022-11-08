@@ -16,14 +16,6 @@
   flex: 1;
 }
 
-.main__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 40px;
-}
-
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -31,13 +23,6 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
-  .main__title {
-    font-size: 22px;
-    line-height: 24px;
-    margin-bottom: 28px;
-  }
-}
 @media screen and (min-width: 1180px) {
   .container {
     width: 1180px;
