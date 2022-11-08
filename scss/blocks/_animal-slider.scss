@@ -1,13 +1,6 @@
 .animal-slider {
-    padding-top: 68px;
+    padding-top: 100px;
 }
-
-//.popular-questions__list-box {
-//    display: grid;
-//    grid-template-columns : repeat(3, 1fr);
-//    margin-bottom: 68px;
-//    width: 100%;
-//}
 
 .animal-slider .slick-track{
     width: 100%!important;
@@ -40,12 +33,6 @@
 
     &:hover {
         transform: scale(1.05);
-    }
-}
-
-@media screen and (max-width: 1024px) { 
-    .popular-questions__list-box {
-        margin-bottom: 40px;
     }
 }
 

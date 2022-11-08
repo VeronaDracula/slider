@@ -44,7 +44,7 @@
   }
 }
 .animal-slider {
-  padding-top: 68px;
+  padding-top: 100px;
 }
 
 .animal-slider .slick-track {
@@ -77,11 +77,6 @@
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 1024px) {
-  .popular-questions__list-box {
-    margin-bottom: 40px;
-  }
-}
 .popup {
   position: fixed;
   width: 100%;
@@ -133,7 +128,9 @@
 }
 
 .main-slider > .slick-list {
-  height: 300px;
+  display: flex;
+  align-items: center;
+  height: 350px;
 }
 
 .slider > .slick-arrow {
@@ -152,10 +149,10 @@
   background-color: transparent;
 }
 .slider > .slick-arrow.slick-prev {
-  left: 0px;
+  left: 0;
 }
 .slider > .slick-arrow.slick-next {
-  right: 0px;
+  right: 0;
 }
 
 .slider__item {
@@ -193,6 +190,8 @@
 .slider-help-img {
   width: 177px;
   height: 186px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1143px) {
@@ -251,7 +250,7 @@
   justify-content: flex-start;
   position: relative;
   width: 563px;
-  height: 654px;
+  height: 600px;
   overflow: hidden;
 }
 

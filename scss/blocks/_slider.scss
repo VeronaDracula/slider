@@ -9,7 +9,9 @@
 
 .main-slider {
     >.slick-list {
-        height: 300px;
+        display: flex;
+        align-items: center;
+        height: 350px;
     }
 }
 
@@ -30,10 +32,10 @@
         border: none;
         background-color: transparent;
         &.slick-prev {
-            left: 0px;
+            left: 0;
         }
         &.slick-next {
-            right: 0px;
+            right: 0;
         }
     }
 }
@@ -77,6 +79,8 @@
 .slider-help-img {
     width: 177px;
     height: 186px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 1143px) {
